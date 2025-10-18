@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AdviceApp</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- React y ReactDOM -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <!-- Babel -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Fuentes -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Source+Code+Pro&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .font-sans { font-family: 'Inter', sans-serif; }
+        .font-mono { font-family: 'Source Code Pro', monospace; }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Contenedor raíz de React -->
+    <div id="root"></div>
+
+    <!-- Inicialización de Firebase -->
+    <script type="module" src="./firebase-init.js"></script>
+
+    <!-- Aplicación principal -->
+    <script type="text/babel" src="./app.jsx"></script>
+</body>
+</html>
